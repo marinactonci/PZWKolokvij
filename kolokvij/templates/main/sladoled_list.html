@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Sladoledi </h2>
+<br>
+{% for s in sladoled_list %}
+    <div class="sladoled">
+        <h4>{{ s.naziv }}</h4><br>
+        Datum proizvodnje: {{s.datum_proizvodnje}}<br>
+        Vegan: {{s.vegan}}
+    </div>
+{% endfor %}
+{% endblock %}

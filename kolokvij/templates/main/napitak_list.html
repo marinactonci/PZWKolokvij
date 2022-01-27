@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Napitci </h2>
+<br>
+{% for n in napitak_list %}
+    <div class="napitak">
+        <h4>{{ n.naziv }}</h4><br>
+        Cijena: {{n.cijena}}<br>
+        Drzava: {{n.drzava}}<br>
+        <p>Opis: {{n.opis}}</p>
+    </div>
+{% endfor %}
+{% endblock %}

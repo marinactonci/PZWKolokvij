@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <h1>Dobrodosli na pocetnu str</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Pocetna</a></li>
+            <li><a href="/sladoledi">Sladoledi</a></li>
+            <li><a href="/napitci">Napitci</a></li>
+            <li><a href="/drugiSlad">Filtrirani sladoledi</a></li>
+            <li><a href="/drugiNap">Filtrirani napitci</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

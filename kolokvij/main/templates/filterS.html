@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Filter sladoleda</h2>
+<br>
+{% for n in sladoledi %}
+    <div class="sladoled">
+        <h4>{{ n.naziv }}</h4><br>
+        datum proizvodnje: {{n.datum_proizvodnje}}<br>
+        Vegan: {{n.vegan}}<br>
+    </div>
+{% endfor %}
+{% endblock %}
